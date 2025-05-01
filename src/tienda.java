@@ -23,7 +23,7 @@ public class tienda {
     public especies darespecie4() {
         return especie4;
     }
-    public especie
+
     }
 
 
