@@ -1,6 +1,8 @@
 public class especies {
-public enum Tipos{
-  Blanca, BoaConstrictor, Titidorado, guacamayaroja }
+public enum Categoria{
+    aves ,reptiles ,mamifero
+
+}
  private String nombre;
  private int anios;
  private String clase;
@@ -9,21 +11,45 @@ public enum Tipos{
  private int ventas;
 
 
- void establecernombre(String nombre){
- this.nombre = nombre;
+
+ public especies(String nombre, Categoria pCategoria,int anios,String clase,int precio,int cantidad){
+ nombre = nombre;
+     Categoria Categoria = pCategoria;
+ anios = anios;
+ clase = clase;
+ precio=precio;
+ cantidad=cantidad;
+ ventas=0;
+
  }
- void estableceranios(int anios){
-     this.anios= anios;
+ String devolverNombre(){
+     return nombre;
+ }
+
+    int  devolveranios(){
+        return anios;
     }
 
-    void establecerTipo(String clase){
-        this.clase=clase;
+    String devolverClase(){
+        return clase;
     }
-    void establecerTipo(int precio){
-        this.precio=precio;
-        }
+
+    int devolverPrecio(){
+        return precio;
+    }
 
 
+    int devolverCantidad(){
+        return cantidad;
+    }
+    int devolverVentas(){
+        return ventas;
+    }
+    Categoria darCategoria(){
+        Categoria Categoria = null;
+        return Categoria;
+    }
 
 
 }
+
